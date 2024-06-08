@@ -11,7 +11,7 @@ import { scrapeAmazonProduct } from "@/lib/scraper";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 import { connectToMongoDB } from "@/lib/mongoose";
 
-export const maxDuration = 300; // This function can run for a maximum of 300 seconds
+export const maxDuration = 60; // This function can run for a maximum of 300 seconds
 export const dynamic = "force-dynamic"; //overrides any other rendering behavior and ensures that the page or component is always dynamically rendered. This can be useful in scenarios where you need to guarantee fresh data on every request, regardless of any other configuration that might suggest static rendering.
 export const revalidate = 0;
 
